@@ -9,11 +9,15 @@ on your Windows PC or Mobile Device (Termux).
 ------------------------------------------------------------
 A) FOR MOBILE USERS (TERMUX)
 ------------------------------------------------------------
-1. Install "Termux" from F-Droid or Play Store.
-2. Open Termux and run these commands one by one:
-   
+To install everything in Termux, run these codes:
+
+1. Update system:
    pkg update && pkg upgrade
-   pkg install python git
+
+2. Install Python & Git:
+   pkg install python git -y
+
+3. Download & Run Bot:
    git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
    cd FB_Auto_profile_posting_cookies
    pip install -r requirements.txt
@@ -22,8 +26,12 @@ A) FOR MOBILE USERS (TERMUX)
 ------------------------------------------------------------
 B) FOR WINDOWS USERS
 ------------------------------------------------------------
-1. Install Python from https://www.python.org/ (Check "Add to PATH").
-2. Open CMD and run:
+You can install Python using the terminal (CMD) with this code:
+
+1. Install Python via Terminal:
+   winget install Python.Python.3.12
+
+2. Download & Run Bot:
    git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
    cd FB_Auto_profile_posting_cookies
    pip install -r requirements.txt
@@ -35,8 +43,7 @@ STEP 3: GET YOUR FACEBOOK COOKIES
 FOR MOBILE:
 1. Use "Kiwi Browser" or "Mises Browser".
 2. Log into Facebook.
-3. Use a "Cookie Editor" extension to copy your cookies 
-   OR use the browser's developer tools if available.
+3. Use a "Cookie Editor" extension to copy your cookies.
 
 FOR PC:
 1. Log into Facebook in Chrome/Edge.
@@ -46,19 +53,16 @@ FOR PC:
 ------------------------------------------------------------
 STEP 4: RUN THE BOT
 ------------------------------------------------------------
-1. In your terminal (Termux or CMD), run:
+1. In your terminal, run:
    python bot.py
-2. Paste your Cookie String when asked and press Enter.
-3. Enter the link(s) you want to post.
+2. Paste your Cookie String and press Enter.
 
 ------------------------------------------------------------
 TIPS & TROUBLESHOOTING
 ------------------------------------------------------------
-* TERMUX ERROR: If "pkg" fails, try running "termux-setup-storage" 
-  and give permission.
-* COOKIES EXPIRED: Facebook sessions end. Get a new cookie 
-  string if the bot says "Expired".
-* RATE LIMIT: The bot has a built-in delay. Don't post too fast.
+* TERMUX ERROR: If "pkg" fails, try: termux-setup-storage
+* CMD ERROR: If "python" not found, restart your CMD.
+* COOKIES: If "Expired", get a fresh cookie string.
 
 ============================================================
           Developed by atomic14a | Version 2.0

@@ -35,20 +35,18 @@ pip install -r requirements.txt
 python bot.py
 ```
 
-### 💻 For Windows Users
-1.  **Clone the Repository**:
-    ```bash
-    git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
-    cd FB_Auto_profile_posting_cookies
-    ```
-2.  **Install Libraries**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Run the Bot**:
-    ```bash
-    python bot.py
-    ```
+### 💻 For Windows Users (Terminal Install)
+If you don't have Python, install it via CMD with this code:
+```bash
+winget install Python.Python.3.12
+```
+Then run:
+```bash
+git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
+cd FB_Auto_profile_posting_cookies
+pip install -r requirements.txt
+python bot.py
+```
 
 ---
 
