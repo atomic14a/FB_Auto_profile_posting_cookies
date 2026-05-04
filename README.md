@@ -2,39 +2,92 @@
 
 A powerful, pure Python-based Facebook automation tool that uses GraphQL for high-performance posting without the need for Selenium or a browser.
 
-## ✨ Features
-- **Pure Python**: Lightweight and fast, no browser drivers needed.
-- **GraphQL Integration**: Uses Facebook's internal API for reliable posting.
-- **Bulk Posting**: Post multiple links at once.
-- **Link Previews**: Automatically fetches and includes link previews.
-- **Dual Mode**: Supports both Profile and Page posting.
-- **Session Validation**: Real-time checking of cookie status.
-- **Smart Retries**: Handles rate limiting and connection issues gracefully.
+---
 
-## 🛠️ Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
-   cd FB_Auto_profile_posting_cookies
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 🚀 Usage
-
-1. Run the bot:
-   ```bash
-   python bot.py
-   ```
-2. **Provide Cookies**: Paste your Facebook cookies when prompted.
-3. **Enter Links**: Provide the link(s) you want to post. For bulk posting, separate links with commas.
-
-## ⚠️ Disclaimer
-This tool is for educational purposes only. Use it responsibly and in compliance with Facebook's Terms of Service.
+## 📋 Table of Contents
+1. [Prerequisites](#-prerequisites)
+2. [Installation Guide](#-installation-guide)
+3. [How to Run the Bot](#-how-to-run-the-bot)
+4. [How to Get Cookies](#-how-to-get-cookies)
+5. [Troubleshooting](#-troubleshooting)
+6. [Disclaimer](#-disclaimer)
 
 ---
-Developed by **atomic14a**
+
+## 🛠 Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+*   **Python 3.8 or higher**: [Download here](https://www.python.org/downloads/)
+*   **Git**: [Download here](https://git-scm.com/downloads)
+
+---
+
+## 📥 Installation Guide
+
+Follow these steps exactly to set up the bot on your computer.
+
+### 1. Copy the Repository (Clone)
+Open your terminal (CMD, PowerShell, or Terminal) and run:
+```bash
+git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
+```
+
+### 2. Enter the Project Directory
+```bash
+cd FB_Auto_profile_posting_cookies
+```
+
+### 3. Install Required Libraries
+Run this command to install all necessary Python packages:
+```bash
+pip install -r requirements.txt
+```
+*Note: If you are on Linux/Mac and `pip` doesn't work, try `pip3 install -r requirements.txt`.*
+
+---
+
+## 🚀 How to Run the Bot
+
+Once the installation is complete, follow these steps to start posting:
+
+### 1. Launch the Bot
+In your terminal, run:
+```bash
+python bot.py
+```
+
+### 2. Enter Your Cookies
+When the bot starts, it will ask for your **Cookie String**. 
+*   Paste your full Facebook cookie string and press **Enter**.
+*   The bot will automatically validate if the session is alive.
+
+### 3. Enter Links to Post
+*   **Single Post**: Just paste the link (e.g., `https://google.com`).
+*   **Bulk Post**: Paste multiple links separated by commas (e.g., `link1.com, link2.com, link3.com`).
+
+---
+
+## 🍪 How to Get Cookies?
+
+1. Open Facebook in your Chrome/Edge browser and log in.
+2. Press `F12` or `Right Click > Inspect` to open Developer Tools.
+3. Go to the **Network** tab.
+4. Refresh the page.
+5. Click on any request (like `home.php` or `bz`) and look for the **Request Headers** section.
+6. Find the `Cookie:` field and copy the entire string after it.
+
+---
+
+## ❓ Troubleshooting
+
+*   **"pip is not recognized"**: Ensure Python is added to your System PATH during installation.
+*   **"Cookies Expired"**: Facebook sessions expire. If you see this, simply refresh your browser and get a fresh cookie string.
+*   **"Post Failed"**: If you post too rapidly, Facebook might temporarily block you. The bot includes a 3-5 second delay by default to prevent this.
+
+---
+
+## ⚠️ Disclaimer
+This tool is for educational purposes only. The developer is not responsible for any account blocks or misuse of this script. Use it responsibly and in compliance with Facebook's Terms of Service.
+
+---
+Developed by **[atomic14a](https://github.com/atomic14a)**
