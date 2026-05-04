@@ -4,57 +4,61 @@
 ============================================================
 
 Follow these steps carefully to set up and run the bot 
-on your computer.
+on your Windows PC or Mobile Device (Termux).
 
 ------------------------------------------------------------
-STEP 1: INSTALL PYTHON
+A) FOR MOBILE USERS (TERMUX)
 ------------------------------------------------------------
-If you don't have Python installed:
-1. Go to https://www.python.org/downloads/
-2. Download the latest version for Windows.
-3. IMPORTANT: When installing, make sure to check the box 
-   that says "Add Python to PATH".
-
-------------------------------------------------------------
-STEP 2: INSTALL LIBRARIES
-------------------------------------------------------------
-1. Open your Terminal or Command Prompt (CMD).
-2. Go to the project folder:
-   cd "D:\Zain Project\FB_Page  profile Posting Bot with terminal\FB_Auto_Profile_posting_cookies v1.2"
-3. Run the following command to install required libraries:
+1. Install "Termux" from F-Droid or Play Store.
+2. Open Termux and run these commands one by one:
+   
+   pkg update && pkg upgrade
+   pkg install python git
+   git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
+   cd FB_Auto_profile_posting_cookies
    pip install -r requirements.txt
+   python bot.py
+
+------------------------------------------------------------
+B) FOR WINDOWS USERS
+------------------------------------------------------------
+1. Install Python from https://www.python.org/ (Check "Add to PATH").
+2. Open CMD and run:
+   git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
+   cd FB_Auto_profile_posting_cookies
+   pip install -r requirements.txt
+   python bot.py
 
 ------------------------------------------------------------
 STEP 3: GET YOUR FACEBOOK COOKIES
 ------------------------------------------------------------
-1. Log into Facebook in your browser (Chrome/Edge).
-2. Press F12 to open "Developer Tools".
-3. Go to the "Network" tab.
-4. Refresh the Facebook page.
-5. Click on any request on the left (e.g., "home.php").
-6. On the right side, find "Request Headers".
-7. Copy the entire text next to "Cookie:".
+FOR MOBILE:
+1. Use "Kiwi Browser" or "Mises Browser".
+2. Log into Facebook.
+3. Use a "Cookie Editor" extension to copy your cookies 
+   OR use the browser's developer tools if available.
+
+FOR PC:
+1. Log into Facebook in Chrome/Edge.
+2. Press F12 > Network Tab > Refresh.
+3. Click any request > Find "Cookie" in Headers > Copy it.
 
 ------------------------------------------------------------
 STEP 4: RUN THE BOT
 ------------------------------------------------------------
-1. In your terminal, run:
+1. In your terminal (Termux or CMD), run:
    python bot.py
 2. Paste your Cookie String when asked and press Enter.
 3. Enter the link(s) you want to post.
-   - For single post: Paste 1 link.
-   - For bulk post: Paste links separated by commas.
 
 ------------------------------------------------------------
 TIPS & TROUBLESHOOTING
 ------------------------------------------------------------
-* COOKIES EXPIRED: If the bot says "Cookies Expired", 
-  it means your Facebook session ended. Get a new cookie 
-  string using Step 3.
-* RATE LIMIT: Do not post too many links too fast. The 
-  bot has a built-in delay to keep your account safe.
-* CMD ERROR: If "python" is not recognized, try "py" or 
-  ensure Python is added to your system PATH.
+* TERMUX ERROR: If "pkg" fails, try running "termux-setup-storage" 
+  and give permission.
+* COOKIES EXPIRED: Facebook sessions end. Get a new cookie 
+  string if the bot says "Expired".
+* RATE LIMIT: The bot has a built-in delay. Don't post too fast.
 
 ============================================================
           Developed by atomic14a | Version 2.0

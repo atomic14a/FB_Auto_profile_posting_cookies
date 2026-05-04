@@ -24,25 +24,31 @@ Before you begin, ensure you have the following installed on your system:
 
 ## 📥 Installation Guide
 
-Follow these steps exactly to set up the bot on your computer.
-
-### 1. Copy the Repository (Clone)
-Open your terminal (CMD, PowerShell, or Terminal) and run:
+### 📱 For Mobile Users (Termux)
+Follow these commands step-by-step in your Termux app:
 ```bash
+pkg update && pkg upgrade
+pkg install python git
 git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
-```
-
-### 2. Enter the Project Directory
-```bash
 cd FB_Auto_profile_posting_cookies
+pip install -r requirements.txt
+python bot.py
 ```
 
-### 3. Install Required Libraries
-Run this command to install all necessary Python packages:
-```bash
-pip install -r requirements.txt
-```
-*Note: If you are on Linux/Mac and `pip` doesn't work, try `pip3 install -r requirements.txt`.*
+### 💻 For Windows Users
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/atomic14a/FB_Auto_profile_posting_cookies.git
+    cd FB_Auto_profile_posting_cookies
+    ```
+2.  **Install Libraries**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Run the Bot**:
+    ```bash
+    python bot.py
+    ```
 
 ---
 
