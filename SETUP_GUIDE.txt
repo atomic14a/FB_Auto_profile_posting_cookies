@@ -1,0 +1,61 @@
+============================================================
+       FB AUTO PROFILE & PAGE POSTING BOT v2.0
+              COMPLETE SETUP GUIDE
+============================================================
+
+Follow these steps carefully to set up and run the bot 
+on your computer.
+
+------------------------------------------------------------
+STEP 1: INSTALL PYTHON
+------------------------------------------------------------
+If you don't have Python installed:
+1. Go to https://www.python.org/downloads/
+2. Download the latest version for Windows.
+3. IMPORTANT: When installing, make sure to check the box 
+   that says "Add Python to PATH".
+
+------------------------------------------------------------
+STEP 2: INSTALL LIBRARIES
+------------------------------------------------------------
+1. Open your Terminal or Command Prompt (CMD).
+2. Go to the project folder:
+   cd "D:\Zain Project\FB_Page  profile Posting Bot with terminal\FB_Auto_Profile_posting_cookies v1.2"
+3. Run the following command to install required libraries:
+   pip install -r requirements.txt
+
+------------------------------------------------------------
+STEP 3: GET YOUR FACEBOOK COOKIES
+------------------------------------------------------------
+1. Log into Facebook in your browser (Chrome/Edge).
+2. Press F12 to open "Developer Tools".
+3. Go to the "Network" tab.
+4. Refresh the Facebook page.
+5. Click on any request on the left (e.g., "home.php").
+6. On the right side, find "Request Headers".
+7. Copy the entire text next to "Cookie:".
+
+------------------------------------------------------------
+STEP 4: RUN THE BOT
+------------------------------------------------------------
+1. In your terminal, run:
+   python bot.py
+2. Paste your Cookie String when asked and press Enter.
+3. Enter the link(s) you want to post.
+   - For single post: Paste 1 link.
+   - For bulk post: Paste links separated by commas.
+
+------------------------------------------------------------
+TIPS & TROUBLESHOOTING
+------------------------------------------------------------
+* COOKIES EXPIRED: If the bot says "Cookies Expired", 
+  it means your Facebook session ended. Get a new cookie 
+  string using Step 3.
+* RATE LIMIT: Do not post too many links too fast. The 
+  bot has a built-in delay to keep your account safe.
+* CMD ERROR: If "python" is not recognized, try "py" or 
+  ensure Python is added to your system PATH.
+
+============================================================
+          Developed by atomic14a | Version 2.0
+============================================================
